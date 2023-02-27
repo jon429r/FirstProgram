@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import javax.swing.*;
 
 public class App{
 
@@ -10,8 +11,30 @@ public static int numStudents = 0;
     public static ArrayList<Student> dataBase = new ArrayList<>(); 
 
     public static void main(String args[]) throws FileNotFoundException{
+
+
+
+        createFrame();
         filldataBase();
-        menu();
+
+    }
+
+    public static void createFrame(){
+        JFrame frame = new JFrame();
+        frame.setSize(700,500);
+        frame.setVisible(true);
+
+        JButton registerButton = new JButton("Become a Husky");
+        registerButton.setBounds(100,100,100,100);
+        frame.add(registerButton);
+
+        JButton enrollButton = new JButton("Enroll for Courses");
+        enrollButton.setBounds(250,100,100,100);
+        frame.add(enrollButton);
+
+        JButton checkGradesButton = new JButton("Check your Grades");
+        checkGradesButton.setBounds(350,100,100,100);
+        frame.add(checkGradesButton);
     }
     public static void menu(){
         Scanner scnr = new Scanner(System.in);
