@@ -1,12 +1,9 @@
 Jonathan
 Day
-100000
 4
 Elizabeth
 Day
-100001
 4
 Carter
 Hart
-100002
 1
